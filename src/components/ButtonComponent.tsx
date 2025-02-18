@@ -1,6 +1,9 @@
-import React from "react";
+type ButtonProps = {
+  title: string;
+  action: () => void;
+};
 
-const ButtonComponent = ({ title, action }) => {
+const ButtonComponent = ({ title, action }: ButtonProps) => {
   return <button onClick={action}>{title}</button>;
 };
 
